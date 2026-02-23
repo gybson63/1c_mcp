@@ -212,7 +212,7 @@ async def main():
 		sys.exit(1)
 
 	if config.auth_mode == "none":
-		if not config.onec_username or not config.onec_password:
+		if config.onec_username is None or config.onec_password is None:
 			logger.error("Для auth_mode=none обязательны MCP_ONEC_USERNAME и MCP_ONEC_PASSWORD.")
 			sys.exit(1)
 	else:

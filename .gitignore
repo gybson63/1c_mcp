@@ -218,3 +218,5 @@ yarn-error.log*
 *.dmg 
 
 src/1c_ext/ConfigDumpInfo.xml
+.mcp.json
+.claude/settings.local.json
