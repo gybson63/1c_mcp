@@ -394,6 +394,8 @@ python -m src.py_server http --log-level DEBUG
 
 Например: `http://localhost/base/hs/mcp/`
 
+> **Важно:** Регистр имени базы в URL должен точно совпадать с именем публикации (например, `base`, а не `Base`). Иначе 1С выполняет редирект, превращающий POST в GET.
+
 ### Endpoints 1С
 
 1. **`GET /health`**
